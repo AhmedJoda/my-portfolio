@@ -59,7 +59,7 @@ class App extends Component {
 
 AOS.init({
   duration: 900,
-  delay: 150,
+  delay: 120,
 });
 
 export default App;
