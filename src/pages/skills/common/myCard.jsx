@@ -20,7 +20,7 @@ const MyCard = (props) => {
               <Row>
                 {props.skills.map((skill) => (
                   <Col className="m-auto" data-aos="fade-up" md={"auto"}>
-                    <span className="m-2">
+                    <span className="m-1">
                       <a
                         className="text-dark text-decoration-none"
                         href={skill.link}
@@ -33,7 +33,7 @@ const MyCard = (props) => {
                           rounded
                           className="image-style"
                         ></Image>
-                        <Card.Title className="text-center mt-5">
+                        <Card.Title className="text-center mt-4">
                           {skill.name}
                         </Card.Title>
                       </a>
