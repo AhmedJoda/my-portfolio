@@ -20,7 +20,7 @@ const MyCard = (props) => {
               <Row>
                 {props.skills.map((skill) => (
                   <Col className="m-auto" data-aos="fade-up" md={"auto"}>
-                    <span>
+                    <span className="m-2">
                       <a
                         className="text-dark text-decoration-none"
                         href={skill.link}
