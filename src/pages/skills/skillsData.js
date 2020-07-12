@@ -172,22 +172,22 @@ const languages = [
   {
     name: "Arabic",
     img: L_ARABIC,
-    link: "https://git-scm.com/",
+    link: "",
   },
   {
     name: "English",
     img: L_ENGLISH,
-    link: "https://git-scm.com/",
+    link: "",
   },
   {
     name: "Turkish",
     img: L_TURKISH,
-    link: "https://git-scm.com/",
+    link: "",
   },
   {
     name: "German",
     img: L_GERMAN,
-    link: "https://git-scm.com/",
+    link: "",
   },
 ];
 
