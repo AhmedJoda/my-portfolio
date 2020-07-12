@@ -7,7 +7,6 @@ import MyTitleMessage from "./components/title-message/title-message.component";
 import About from "./pages/about/about.component";
 import Container from "react-bootstrap/Container";
 import TimeLine from "./components/projects-timeline/projects-timeline.component";
-import Fade from "react-reveal/Fade";
 import ContactForm from "./pages/contact-form/contact-form.component";
 import { Parallax } from "react-parallax";
 import FooterPanel from "./components/footer/footer.component";
@@ -32,32 +31,23 @@ class App extends Component {
           >
             <div>
               <Container className="container-box rounded">
-                <Fade duration={700}>
-                  <About />
-                </Fade>
+                <About />
               </Container>
             </div>
           </Parallax>
         </div>
         <Container className="container-box rounded">
-          <Fade duration={700}>
-            <hr />
-
-            <Skills />
-          </Fade>
+          <hr />
+          <Skills />
         </Container>
 
         <Container className="container-box rounded">
-          <Fade duration={700}>
-            <hr />
-            <TimeLine />
-          </Fade>
+          <hr />
+          <TimeLine />
         </Container>
         <Container className="container-box rounded">
-          <Fade duration={700}>
-            <hr />
-            <ContactForm />
-          </Fade>
+          <hr />
+          <ContactForm />
         </Container>
 
         <hr />
@@ -67,6 +57,9 @@ class App extends Component {
   }
 }
 
-AOS.init();
+AOS.init({
+  duration: 900,
+  delay: 150,
+});
 
 export default App;
