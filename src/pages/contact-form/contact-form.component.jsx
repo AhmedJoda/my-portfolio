@@ -14,7 +14,7 @@ const ContactForm = () => {
           <Col className="d-flex justify-content-center flex-wrap">
             <div className="m-2">
               <a
-                href="mailto:akjha96@gmail.com"
+                href="mailto:ahmedjodaalmory99@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
