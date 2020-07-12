@@ -154,17 +154,17 @@ const editing = [
   {
     name: "Adobe Photoshop",
     img: L_PHOTOSHOP,
-    link: "www.adobe.com",
+    link: "https://www.adobe.com/",
   },
   {
     name: "Adobe Premiere Pro",
     img: L_PREMIERE,
-    link: "www.adobe.com",
+    link: "https://www.adobe.com/",
   },
   {
     name: "Adobe After Effects",
     img: L_AFTER_EFFECTS,
-    link: "www.adobe.com",
+    link: "https://www.adobe.com/",
   },
 ];
 
