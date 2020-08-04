@@ -29,7 +29,7 @@ const ContactForm = () => {
 
             <div className="m-2">
               <a
-                href="https://wa.me/00201064194694"
+                href="https://wa.me/00201211779758"
                 target="_blank"
                 rel="noopener noreferrer"
               >
