@@ -19,7 +19,7 @@ export default function TimeLine() {
       <Timeline>
         <Events>
           {/* Project: WILD */}
-          <ImageEvent
+          {/* <ImageEvent
             date="2019"
             className="text-center"
             text="WILD - WEARABLE INTELLIGENT LIMITLESS
@@ -94,7 +94,7 @@ export default function TimeLine() {
                 </Accordion>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
           {/* Project: Sins Of The Oceans */}
 
           <ImageEvent
