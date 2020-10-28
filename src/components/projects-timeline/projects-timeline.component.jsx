@@ -1,21 +1,18 @@
 import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 import SinsOfTheOceans from "../../assets/img/projects/sinsoftheoceans.webp";
-import WILD from "../../assets/img/projects/wild.webp";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
-import L_REACT from "../../assets/img/skills/react.svg";
-import L_PYTHON from "../../assets/img/skills/python.svg";
-import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_UNREAL_ENGINE from "../../assets/img/skills/unreal.svg";
-
+import { useTranslation } from "react-i18next";
 import "./projects-timeline.styles.css";
 
 export default function TimeLine() {
+  const { t } = useTranslation();
   return (
     <div data-aos="fade-up" id="projects">
-      <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
+      <h1 className="pt-3 text-center font-details-b pb-3">{t("Projects")}</h1>
       <Timeline>
         <Events>
           {/* Project: WILD */}
@@ -113,13 +110,12 @@ export default function TimeLine() {
                       eventKey="0"
                       className="p-2 text-center accordian-main"
                     >
-                      PROJECT DETAILS
+                      {t("project details")}
                     </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="0" className="text-left">
-                      <Card.Body>
-                        an adventure-Narrati video game developed by MIST team
-                        using Unreal Engine.
+                      <Card.Body className="soto" dir="auto">
+                        {t("soto")}
                         <hr />
                         <ul>
                           <li>
@@ -130,13 +126,13 @@ export default function TimeLine() {
                                 rounded
                                 className="image-style m-1"
                               ></Image>
-                              Unreal Engine
+                              {t("unreal engine")}
                             </span>
                           </li>
                         </ul>
                         <hr />
                         <ul>
-                          <li>not released yet</li>
+                          <li>{t("not released yet")}</li>
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -148,7 +144,7 @@ export default function TimeLine() {
                   href="https://www.youtube.com/watch?v=GJ825HreLJw"
                   target="_blank"
                 >
-                  WATCH VIDEO
+                  {t("watch video")}
                 </UrlButton>
               </div>
             </div>

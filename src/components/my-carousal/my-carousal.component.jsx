@@ -34,10 +34,10 @@ class MyCarousal extends Component {
           controls={false}
           indicators
           interval={2500}
-          pauseOnHover={false}
+          // pauseOnHover={false}
         >
           {slides.map((slide) => (
-            <Carousel.Item>
+            <Carousel.Item key={slide}>
               <img
                 className="d-block w-100 custom-img"
                 src={slide}

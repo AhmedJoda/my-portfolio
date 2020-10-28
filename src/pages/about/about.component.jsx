@@ -6,12 +6,15 @@ import "./about.styles.css";
 import Profile from "../../assets/img/profile/profile.webp";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div data-aos="fade-up" id="about">
       <div className="about">
-        <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
+        <h1 className="pt-3 text-center font-details pb-3">{t("about me")}</h1>
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
@@ -27,38 +30,36 @@ const About = () => {
               </Row>
             </Col>
             <Col xs={12} md={6}>
-              <Row className=" align-items-start p-2 my-details rounded">
-                Hi there! I am <strong>&nbsp;Ahmed Joda</strong>
+              <Row
+                dir="auto"
+                className=" align-items-start p-2 my-details rounded"
+              >
+                {t("hi there")}
                 <br />
-                JavaScript Developer with +2 Years of experience in Web
-                Development in both front end and back end, and I have dealt
-                with all mentioned skills in different projects.
+                <strong>&nbsp;{t("name")}</strong>
                 <br />
-                have +3 years of experience in Game Development on Unreal Engine
-                , Mainly in Artificial Intelligence.
+                {t("web")}
                 <br />
-                Multiple courses in Game Development and Unreal Engine
-                Artificial intelligence and environment.
+                {t("game")}
                 <br />
-                My goal is to be one of the best in both Game Development and
-                Web Development fields.
+                {t("goal")}
                 <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
                   <div>
                     <a href="#contact">
                       <Button className="m-2" variant="outline-primary">
-                        Let's talk
+                        {t("talk")}
                       </Button>
                     </a>
                   </div>
                   <div>
                     <a
-                      href="https://drive.google.com/file/d/1xjAf7uE4jlakA4Xo1LP-xDvHLA3YeWDu/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1ei8LEwDmRabpII_52Ju2Q6s-OHjFmsXe/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Button className="m-2" variant="outline-success">
-                        My Resume
+                        {t("resume")}
                       </Button>
                     </a>
                   </div>
@@ -69,7 +70,7 @@ const About = () => {
                       rel="noopener noreferrer"
                     >
                       <Button className="m-2" variant="outline-dark">
-                        GitHub
+                        {t("github")}
                       </Button>
                     </a>
                   </div>
@@ -80,7 +81,7 @@ const About = () => {
                       rel="noopener noreferrer"
                     >
                       <Button className="m-2" variant="outline-info">
-                        LinkedIn
+                        {t("linkedin")}
                       </Button>
                     </a>
                   </div>

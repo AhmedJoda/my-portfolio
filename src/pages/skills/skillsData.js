@@ -172,22 +172,22 @@ const languages = [
   {
     name: "Arabic",
     img: L_ARABIC,
-    link: "",
+    language: "ar",
   },
   {
     name: "English",
     img: L_ENGLISH,
-    link: "",
+    language: "en",
   },
   {
     name: "Turkish",
     img: L_TURKISH,
-    link: "",
+    language: "tr",
   },
   {
     name: "German",
     img: L_GERMAN,
-    link: "",
+    language: "de",
   },
 ];
 

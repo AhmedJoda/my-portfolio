@@ -4,11 +4,15 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "./contact-form.styles.css";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   return (
     <div data-aos="fade-down" id="contact">
-      <h1 className="pt-3 text-center font-details-b pb-3">CONTACT ME</h1>
+      <h1 className="pt-3 text-center font-details-b pb-3">
+        {t("contact me")}
+      </h1>
       <Jumbotron className="contact-jumbotron">
         <Row>
           <Col className="d-flex justify-content-center flex-wrap">
@@ -22,7 +26,7 @@ const ContactForm = () => {
                   variant="outline-danger"
                   title="ahmedjodaalmory99@gmail.com"
                 >
-                  <i className="fas fa-envelope-square"></i> Email Me
+                  <i className="fas fa-envelope-square"></i> {t("email me")}
                 </Button>
               </a>
             </div>

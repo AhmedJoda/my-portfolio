@@ -3,45 +3,57 @@ import MyCard from "./common/myCard";
 import skills from "./skillsData";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <Col id="skills" md={"auto"}>
-      <h1 className="text-center font-details-b pb-4">SKILLS</h1>
+      <h1 className="text-center font-details-b pb-4">{t("Skills")}</h1>
       <Row>
         <Col>
           <MyCard
-            title="Programing Languages"
+            title={t("programing languages")}
             skills={skills.programingLanguages}
           />
         </Col>
         <Col>
-          <MyCard title="Game Deveolpment" skills={skills.gamedeveolpment} />
+          <MyCard
+            title={t("game development")}
+            skills={skills.gamedeveolpment}
+          />
         </Col>
       </Row>
-      <MyCard title="Frontend" skills={skills.frontend} />
+      <MyCard title={t("front end")} skills={skills.frontend} />
       <div>
         <Row>
           <Col>
-            <MyCard title="Backend" skills={skills.backend} />
+            <MyCard title={t("backend")} skills={skills.backend} />
           </Col>
           <Col>
-            <MyCard title="Database" skills={skills.database} />
+            <MyCard title={t("database")} skills={skills.database} />
           </Col>
         </Row>
         <Row>
           <Col>
             <MyCard
-              title="Hosting Platforms"
+              title={t("hosting platforms")}
               skills={skills.hostingPlatforms}
             />
           </Col>
           <Col>
-            <MyCard title="Version Control" skills={skills.versionControl} />
+            <MyCard
+              title={t("version control")}
+              skills={skills.versionControl}
+            />
           </Col>
         </Row>
-        <MyCard title="Editing and Visual Effects" skills={skills.editing} />
-        <MyCard title="Languages" skills={skills.languages} />
+        <MyCard
+          title={t("editing and visual effects")}
+          skills={skills.editing}
+        />
+        <MyCard title={t("languages")} skills={skills.languages} />
       </div>
     </Col>
   );

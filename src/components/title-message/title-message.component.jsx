@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const MyTitleMessage = styled.h1`
   position: absolute;
@@ -31,30 +32,37 @@ const MyTitleMessage = styled.h1`
   }
 `;
 
-const TitleMessage = () => (
-  <MyTitleMessage>
-    <div className="titleMessage">
-      <div className="heading">
-        <div className="main text-center mb-3">
-          Hi, I am
-          <br />
-          <span>
-            <strong>Ahmed Joda</strong>
-          </span>
-        </div>
-        <div className="sub">
-          <Typewriter
-            options={{
-              strings: ["Web Developer", "Game Developer", "Mobile Developer"],
-              autoStart: true,
-              loop: true,
-              delay: 50,
-            }}
-          />
+const TitleMessage = () => {
+  const { t } = useTranslation();
+
+  return (
+    <MyTitleMessage>
+      <div className="titleMessage">
+        <div className="heading">
+          <div className="main text-center mb-3">
+            {t("hi")}
+            <br />
+            <span>
+              <strong>{t("name")}</strong>
+            </span>
+          </div>
+          <div className="sub">
+            <Typewriter
+              options={{
+                strings: [
+                  t("web developer"),
+                  t("game developer"),
+                  t("mobile developer"),
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+              }}
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </MyTitleMessage>
-);
-
+    </MyTitleMessage>
+  );
+};
 export default TitleMessage;
